@@ -175,16 +175,30 @@ body {
 }
 .link:hover .icons-header,
 .link:focus .icons-header {
-fill: var(--color-hover-focus);
+fill: var(--accent-color);
 }
 .icon-contact {
 display: inline-block;
 margin-right: 10px;
 }
 .icons {
+  vertical-align: middle;
 align-items: center;
-display: block;
+display: flex;
 fill: var(--color-icon);
+}
+.envelope, .smartphone {
+  display: inline-block;
+  align-items: center;
+  vertical-align: middle;
+}
+.icon-envelope {
+   width: 16px;
+  height: 12px; 
+}
+.icon-smartphone {
+  width: 10px;
+  height: 16px; 
 }
 .header-contacts .header-item-cont:not(:first-child) {
   margin-left: var(--margin-left-50);
@@ -365,10 +379,11 @@ font-weight: 500;
 font-size: var(--font-size-16);
 line-height: 1.2;
 letter-spacing: 0.03em;
-color: var(--main-title-color);  
+color: var(--main-title-color);
+margin-bottom: 10px; 
 }
 .speciality {
-  margin-top: var(--margin-top-10);
+  margin-bottom: 16px;
   text-align: center;
   font-size: var(--font-size-16);
   line-height: 1.2;
@@ -378,12 +393,10 @@ color: var(--main-title-color);
 .social-networks-team {
 display: flex;
 align-items: center;
-margin-left: -10px;
+justify-content: space-between;
 }
 .link-icon {
   padding: 12px;
-  margin-top: 16px;
-  margin-left: 10px;
 display: inline-block;
 width: 44px; height: 44px;
 border-radius: 50%;
@@ -398,35 +411,44 @@ background-color: var(--background-color-icon-card-team);
 }
 .link-icon:hover,
 .link-icon:focus {
-  background-color: var(--color-hover-focus);
+  background-color: var(--accent-color);
 }
 .link:hover .icon-team,
 .link:focus .icon-team {
 fill: white;
 }
 /* clients */
-.clients-icons {
+.clients-group {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  margin-top: -30px;
+  margin-left: -30px;
 }
 .client-link {
   display: inline-block;
-  border: 1px solid #AFB1B8;
-box-sizing: border-box;
+width: 170px;
+height: 92px;
+border: 1px solid #AFB1B8;
 border-radius: 4px;
+padding-top: 16px;
+padding-right: 32px;
+padding-bottom: 16px;
+padding-left: 32px;
+margin-top: 30px;
+margin-left: 30px;
 }
 .icon-client {
-  display: inherit;
-width: 170px; height: 92px;
+width: 106px;
+height: 60px;
 fill: #AFB1B8;
 }
-.client-link:hover,
-.client-link:focus {
-  border-color: var(--color-hover-focus);
+.client-link:focus,
+.client-link:hover {
+  border-color: var(--accent-color);
 }
-.icon-client:hover ,
+.icon-client:hover,
 .icon-client:focus {
-  fill: var(--color-hover-focus);
+  fill: var(--accent-color);
 }
 /* main portfolio */
 .buttons-list-portfolio {
