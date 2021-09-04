@@ -442,14 +442,19 @@ width: 106px;
 height: 60px;
 fill: #AFB1B8;
 }
-.client-link:focus,
-.client-link:hover {
-  border-color: var(--accent-color);
-}
-.icon-client:hover,
-.icon-client:focus {
+ .link:focus .icon-client,
+.link:hover .icon-client {
   fill: var(--accent-color);
 }
+.client-link:focus,
+.client-link:hover {
+   border-color: var(--accent-color);
+}
+
+ /* color: var(--accent-color);
+/*
+
+
 /* main portfolio */
 .buttons-list-portfolio {
   background-color: var(--secundary-text);
@@ -554,7 +559,7 @@ padding-left: var(--card-text-gal-pad-lft);
 }
 .container-footer {
 display: flex;
-vertical-align: bottom;
+align-items: baseline;
 }
 .address {
 margin-top: var(--margin-top-20);
@@ -579,9 +584,7 @@ padding: 0;
 margin: 0;
 color: var(--secundary-text);
 }
-
 .container-social-footer {
-  vertical-align: center;
   display: inline-block;
   width: 206px;
   margin-left: 70px;
